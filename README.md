@@ -13,9 +13,9 @@ SET @input = STUFF(@input,PATINDEX('%[^A-Za-z.''0-9]%',@input),1,'')
 RETURN @input
 END
 ```
-Table_Creation_Script.sql: Script to read Information_Schema from SQL Server and generate create table scripts to execute on Snowflake
+1. Table_Creation_Script.sql: Script to read Information_Schema from SQL Server and generate create table scripts to execute on Snowflake
 
-Apply_Primary_Key_and_Foreign_Key.sql: Script to read Information_Schema from SQL Server and generate primary and foreign key constraints to execute on Snowflake.
+2. Apply_Primary_Key_and_Foreign_Key.sql: Script to read Information_Schema from SQL Server and generate primary and foreign key constraints to execute on Snowflake.
 
 
 
