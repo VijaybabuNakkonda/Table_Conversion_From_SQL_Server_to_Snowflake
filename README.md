@@ -1,7 +1,7 @@
 # Table_Conversion_From_SQL_Server_to_Snowflake
 Scripts to convert tables from SQL Server to Snowflake
 
-As a first step create a small function to remove special characters from table name in SQL Server.Square brackets are not allowed in snowflake.
+As a first step create a small function in SQL Server to remove special characters from table name in SQL Server. Square brackets are not allowed in snowflake on Table names / column names.
 
 ```python
 create FUNCTION [dbo].[fn_GetAplhaNumericOnly](@input VARCHAR(250))
