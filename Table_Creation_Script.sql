@@ -73,6 +73,7 @@ select Table_name, Script from
     WHERE
         t.type = 'U'
 
-) a
-where a.Table_Name like 'ROW.stg%'
-order by a.Table_Name asc
+) Snowflake_DDL
+
+where Snowflake_DDL.Table_Name like 'ROW.stg%'
+order by Snowflake_DDL.Table_Name asc
